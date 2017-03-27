@@ -14,7 +14,6 @@
  *
  */
 
-#if TARGET_OS_IPHONE
 
 #import "DOUAudioVisualizer.h"
 #import "DOUAudioStreamer.h"
@@ -287,7 +286,7 @@
   glGenBuffers(1, &_ibo);
 
   glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-  glColor4f(0.784f, 0.867f, 0.839f, 1.0f);
+  glColor4f(0.98f, 0.84f, 0.2f, 1.0f);
 
   glEnable(GL_BLEND);
   glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
@@ -344,5 +343,3 @@
 }
 
 @end
-
-#endif /* TARGET_OS_IPHONE */

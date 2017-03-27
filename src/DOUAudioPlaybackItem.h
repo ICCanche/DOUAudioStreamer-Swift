@@ -32,7 +32,7 @@
 @property (nonatomic, readonly) id <DOUAudioFile> audioFile;
 
 @property (nonatomic, readonly) NSURL *cachedURL;
-@property (nonatomic, readonly) NSData *mappedData;
+@property (nonatomic, assign) NSData *mappedData;
 
 @property (nonatomic, readonly) AudioFileID fileID;
 @property (nonatomic, readonly) AudioStreamBasicDescription fileFormat;

@@ -14,7 +14,6 @@
  *
  */
 
-#if TARGET_OS_IPHONE
 
 #import "DOUEAGLView.h"
 #import <QuartzCore/QuartzCore.h>
@@ -190,4 +189,3 @@
 
 @end
 
-#endif /* TARGET_OS_IPHONE */

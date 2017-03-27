@@ -14,8 +14,7 @@
  *
  */
 
-#if TARGET_OS_IPHONE
-
+#import <Foundation/Foundation.h>
 #import "DOUEAGLView.h"
 
 typedef NS_ENUM(NSUInteger, DOUAudioVisualizerInterpolationType) {
@@ -29,5 +28,3 @@ typedef NS_ENUM(NSUInteger, DOUAudioVisualizerInterpolationType) {
 @property (nonatomic, assign) DOUAudioVisualizerInterpolationType interpolationType;
 
 @end
-
-#endif /* TARGET_OS_IPHONE */

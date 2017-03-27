@@ -379,22 +379,23 @@ static void audio_route_change_listener(void *inClientData,
              @"invalid interruption type");
 
     if (interruptionType == kAudioSessionInterruptionType_ShouldResume) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated"
-      OSStatus status;
-      status = AudioSessionSetActive(TRUE);
-      NSAssert(status == noErr, @"failed to activate audio session");
-#pragma clang diagnostic pop
-      if (status == noErr) {
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Wdeprecated"
+//      OSStatus status;
+//      status = AudioSessionSetActive(TRUE);
+//      NSAssert(status == noErr, @"failed to activate audio session");
+//#pragma clang diagnostic pop
+//      if (status == noErr) {
+//        
+//      }
         [_renderer setInterrupted:NO];
-
+        
         if (*streamer != nil &&
             [*streamer status] == DOUAudioStreamerPaused &&
             [*streamer isPausedByInterruption]) {
-          [*streamer setPausedByInterruption:NO];
-          [self performSelector:@selector(play) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
+            [*streamer setPausedByInterruption:NO];
+            [self performSelector:@selector(play) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
         }
-      }
     }
   }
   else if (event == event_old_device_unavailable) {

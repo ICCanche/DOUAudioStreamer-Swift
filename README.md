@@ -1,18 +1,17 @@
-# DOUAudioStreamer
+# DOUAudioStreamer-Swift
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/DOUAudioStreamer.svg)](https://cocoapods.org/pods/DOUAudioStreamer)
 [![Platform](https://img.shields.io/cocoapods/p/DOUAudioStreamer.svg)](https://cocoapods.org/pods/DOUAudioStreamer)
 [![License](https://img.shields.io/cocoapods/l/DOUAudioStreamer.svg)](https://github.com/douban/DOUAudioStreamer/blob/master/LICENSE)
 
-DOUAudioStreamer is a Core Audio based streaming audio player for iOS/Mac.
+DOUAudioStreamer-Swift is a Core Audio based streaming audio player for iOS and macOS adaptable to Swift, forked from [DOUAudioStreamer](https://github.com/douban/DOUAudioStreamer).
 
 ## How to Use
 
-[Download](https://github.com/douban/DOUAudioStreamer/archive/master.zip) DOUAudioStreamer, drag everything inside src into your Xcode project and you are ready to go.
+Clone or Download this project, drag everything inside `src` folder into your Xcode project and you are ready to go.
 
 ## Examples
 
-A working demonstration is included inside [example](https://github.com/douban/DOUAudioStreamer/tree/master/example) folder.
+A working demonstration is included inside [example@DOUAudioStreamer](https://github.com/douban/DOUAudioStreamer/tree/master/example) folder.
 
 The documentation for DOUAudioStreamer is coming.
 

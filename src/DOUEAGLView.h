@@ -14,7 +14,6 @@
  *
  */
 
-#if TARGET_OS_IPHONE
 
 #import <UIKit/UIKit.h>
 #import <OpenGLES/EAGL.h>
@@ -34,4 +33,3 @@
 
 @end
 
-#endif /* TARGET_OS_IPHONE */
